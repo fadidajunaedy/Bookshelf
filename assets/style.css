@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap');
+
+:root {
+    --light-color-1 : #ECE5C7;
+    --light-color-2 : #CDC2AE;
+
+    --dark-color: #354259;
+
+    --color-1: #C2DED1;
+    --color-2: #C2DED1;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: var(--light-color-2);
+    color: var(--dark-color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: var(--light-color-1);
+    box-shadow: 0 4px 8px rgba(15, 23, 42, 0.1);
+}
+
+h1, h2, h3, h4 {
+    font-family: Source Serif Pro;
+}
+
+h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+}
+
+.container {
+    padding: 1em 5%;
+    min-height: 85vh;
+}
+
+aside, .form-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside {
+    float: left;
+    background-color: var(--light-color-1);
+    border-radius: 6px;
+    padding: 2em;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(15, 23, 42, 0.1);
+}
+
+.form-book {
+    flex-basis: 100%;
+    gap: 1em;
+}
+
+input, button {
+    padding: 12px 18px;
+    border: none;
+    background-color: #FFF;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline-color: var(--dark-color);
+}
+
+button {
+    font-family: Source Serif Pro;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+}
+
+#btn-submit, #btn-search {
+    font-weight: 600;
+    background-color: var(--dark-color);
+    color: #FFF;
+}
+
+#btn-submit:hover, #btn-search:hover {
+    background-color: var(--color-1);
+    color: var(--dark-color);
+}
+
+.input-check {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.input-check label {
+    color: var(--primary);
+}
+
+.input-check input,
+.input-check label {
+    cursor: pointer;
+}
+
+.data-container {
+    width: 68.5%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.data-container section {
+    padding: 1em;
+    border-radius: 6px;
+    background-color: var(--light-color-1);
+    box-shadow: 0 4px 8px rgba(15, 23, 42, 0.1);
+}
+
+.data-info {
+    display: flex;
+    gap: 1.5em;
+}
+
+.form-search {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+.form-search input {
+    flex-basis: 88%;
+}
+
+.form-search button {
+    flex-basis: 10%;
+}
+
+.list-book article {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    background-color: var(--color-1);
+    box-shadow: 0 4px 8px rgba(15, 23, 42, 0.1);
+}
+
+.list-book article p {
+    margin-bottom: 0.25em;
+}
+
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.check-button {
+    background-color: #00ff00;
+}
+
+.check-button:hover {
+    background-color: hsla(120, 100%, 50%, 60%);
+}
+
+.undo-button {
+    background-color: #ffff00;
+}
+
+.undo-button:hover {
+    background-color: 	hsla(60, 100%, 50%, 60%);
+}
+
+.delete-button {
+    background-color: #ff0000;
+}
+
+.delete-button:hover {
+    background-color: hsla(0, 100%, 50%, 6  0%);
+}
+
+.edit-button {
+    background-color: #4455ff;
+}
+
+.edit-button:hover {
+    background-color: 	hsla(235, 100%, 63%, 60%);
+}
+
+.check-button,
+.undo-button, 
+.delete-button,
+.edit-button {
+    font-size: 1rem;
+    padding: 6px;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+.hidden {
+    display: none !important;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    font-family: Source Serif Pro;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    clear: both;
+    background-color: var(--light-color-1);
+}
+
+.fa-heart {
+    color: #ff0000;
+}
+@media screen and (max-width: 1023px) {
+    aside {
+        margin-bottom: 1em;
+    }
+
+    aside, .data-container {
+        clear: both;
+        width: 100%;
+    }
+}

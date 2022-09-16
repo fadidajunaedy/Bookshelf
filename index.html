@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKSHELF APP | By Fadida Zanetti Junaedy</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>BOOKSHELF APP</h1>
+    </header>
+    <main>
+        <div class="container">
+            <aside>
+                <h2>Tambah Buku Baru</h2>
+                <form id="form-book" class="form-book" action="">
+                    <input id="input-id-book" type="hidden">
+                    <input id="input-title" type="text" placeholder="Judul" required>
+                    <input id="input-author" type="text" placeholder="Penulis" required>
+                    <input id="input-year" type="text" placeholder="Tahun" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+                    <div class="form-check">
+                        <input type="checkbox" name="input-status" id="input-status" placeholder="">
+                        <label for="input-status">Sudah selesai dibaca</label>
+                    </div>
+                    <button id="btn-submit" type="submit">Simpan Buku</button>
+                </form> 
+            </aside>
+            <div class="data-container">
+                <section>
+                    <form id="form-search" class="form-search" action="">
+                        <input type="text" id="search-value" placeholder="Cari buku : nama buku"><button id="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </section>
+                <section id="data-info" class="data-info">
+                    
+                </section>
+                <section>
+                    <h2>Belum Dibaca</h2>
+                    <div id="incomplete-container" class="list-book">
+                        
+                    </div>
+                </section>
+                <section>
+                    <h2>Sudah Dibaca</h2>
+                    <div id="completed-container" class="list-book">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Made with &nbsp;<i class="fa-solid fa-heart"></i>&nbsp; by Fadida Zanetti Junaedy
+    </footer>
+    <script src="/assets/app.js"></script>
+    <script src="https://kit.fontawesome.com/4904c042e5.js" crossorigin="anonymous"></script>
+</body>
+</html>
