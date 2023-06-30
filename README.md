@@ -1,4 +1,3 @@
-BOOKSHELF APP
 <h1 align="center">BOOKSHELF APP</h1>
 <p align="center"><i>A book management web application created using HMTL, CSS, and Javascript using Localstorage as data storage.</i></p>
 
